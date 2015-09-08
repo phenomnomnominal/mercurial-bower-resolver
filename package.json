@@ -1,0 +1,23 @@
+{
+  "name": "mercurial-bower-resolver",
+  "version": "0.0.1",
+  "description": "A HG resolver for Bower",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phenomnomnominal/mercurial-bower-resolver.git"
+  },
+  "keywords": [
+    "bower-resolver"
+  ],
+  "author": "Craig Spence <craig@trademe.co.nz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phenomnomnominal/mercurial-bower-resolver/issues"
+  },
+  "homepage": "https://github.com/phenomnomnominal/mercurial-bower-resolver#readme",
+  "dependencies": {
+    "bluebird": "2.9.34",
+    "tmp": "0.0.27"
+  }
+}
