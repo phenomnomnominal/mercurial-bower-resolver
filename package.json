@@ -1,6 +1,6 @@
 {
   "name": "mercurial-bower-resolver",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "A HG resolver for Bower",
   "main": "dist/init.js",
   "scripts": {
