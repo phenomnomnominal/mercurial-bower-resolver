@@ -1,11 +1,16 @@
 {
   "name": "mercurial-bower-resolver",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A HG resolver for Bower",
   "main": "dist/init.js",
   "scripts": {
-    "watch": "fly",
-    "build": "fly build"
+    "clear": "rimraf dist",
+    "build": "babel src --out-dir dist",
+    "test": "istanbul cover node_modules/mocha/bin/_mocha -- --compilers js:babel/register --colors src/*.spec.js",
+    "watch": "npm-watch"
+  },
+  "watch": {
+    "test": "src/*.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +32,11 @@
   },
   "devDependencies": {
     "babel": "5.8.23",
-    "fly": "0.8.3",
-    "fly-babel": "0.6.0"
+    "chai": "3.2.0",
+    "istanbul": "0.3.19",
+    "mocha": "2.3.2",
+    "npm-watch": "0.0.1",
+    "sinon": "1.16.1",
+    "sinon-chai": "2.8.0"
   }
 }

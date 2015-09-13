@@ -33,21 +33,21 @@ function clone (source, directory) {
     .then(() => directory);
 }
 
-function branches (directory) {
+function branches (directoryName) {
     return run({
         command: BRANCHES,
-        cwd: directory,
+        cwd: directoryName,
     });
 }
 
-function tags (directory) {
+function tags (directoryName) {
     return run({
         command: TAGS,
-        cwd: directory,
+        cwd: directoryName,
     });
 }
 
-function update (endpoint, directory) {
+function update (endpoint, directoryName) {
     let { target } = endpoint;
     let flags = [];
 
@@ -58,7 +58,7 @@ function update (endpoint, directory) {
     return run({
         command: UPDATE,
         args: flags.concat([endpoint.target]),
-        cwd: directory
+        cwd: directoryName
     });
 }
 
