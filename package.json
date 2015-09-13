@@ -1,8 +1,12 @@
 {
   "name": "mercurial-bower-resolver",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A HG resolver for Bower",
-  "main": "index.js",
+  "main": "dist/init.js",
+  "scripts": {
+    "watch": "fly",
+    "build": "fly build"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/phenomnomnominal/mercurial-bower-resolver.git"
@@ -18,6 +22,12 @@
   "homepage": "https://github.com/phenomnomnominal/mercurial-bower-resolver#readme",
   "dependencies": {
     "bluebird": "2.9.34",
+    "semver": "5.0.1",
     "tmp": "0.0.27"
+  },
+  "devDependencies": {
+    "babel": "5.8.23",
+    "fly": "0.8.3",
+    "fly-babel": "0.6.0"
   }
 }
