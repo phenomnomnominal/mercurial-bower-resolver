@@ -1,4 +1,4 @@
-# mercurial-bower-resolver v0.1.1
+# mercurial-bower-resolver v0.1.2
 A Mercurial resolver for Bower
 
 # Usage:

@@ -23,10 +23,6 @@ export default class Resolver {
         return SOURCE_MATCH_REGEX.test(source);
     }
 
-    locate (source) {
-        return source;
-    }
-
     releases (source) {
         return mercurial.clone(source, this.directory)
         .catch(this.error(CLONE_ERROR))

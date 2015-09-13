@@ -46,16 +46,6 @@ describe('Resolver:', () => {
         });
     });
 
-    describe('Resolver.locate:', () => {
-        it('should return the original source', () => {
-            let source = 'hg+ssh://some.repo';
-
-            let resolver = new Resolver();
-
-            expect(resolver.locate(source)).to.equal(source);
-        });
-    });
-
     describe('Resolver.releases:', () => {
         it('should get the available releases from the repo and set the clone directory', () => {
             let directory = { name: directory };
