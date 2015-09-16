@@ -95,15 +95,6 @@ describe('Resolver:', () => {
                 mercurial.update.restore();
             });
         });
-
-        it('should return `undefined` if a cached version is available', () => {
-            let cached = { version: '1.0.0' };
-            let endpoint = { source: 'source' };
-
-            let resolver = new Resolver();
-
-            expect(resolver.fetch(endpoint, cached)).to.equal(undefined);
-        });
     });
 
     describe('Resolver.error:', () => {

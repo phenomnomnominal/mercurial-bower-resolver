@@ -40,11 +40,7 @@ export default class Resolver {
         .spread(parser.versions);
     }
 
-    fetch (endpoint, cached) {
-        if (cached && cached.version) {
-            return;
-        }
-
+    fetch (endpoint) {
         return mercurial.clone(endpoint.source, this.directory)
         .catch(this.error(CLONE_ERROR))
         .then((directory) => {
