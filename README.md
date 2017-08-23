@@ -1,6 +1,9 @@
 # mercurial-bower-resolver v0.1.3
 A Mercurial resolver for Bower
 
+# Requirements:
+* You will need a working version of `mercurial` installed on your machine. `brew install mercurial`, `apt-get install mercurial`, etc.
+
 # Usage:
 
 Include `"mercurial-bower-resolver"` in your .bowerrc:
